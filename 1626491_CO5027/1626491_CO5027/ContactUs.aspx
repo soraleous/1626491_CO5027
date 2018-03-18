@@ -7,7 +7,26 @@
         ASDASDASdgijsdvjawi4etjspdofsodgksclgvkgs
     </p>
     <p>
-        asdasdasdasdasdasdsaasdasdasdasd
+        asdasdasdasdasdasdsaasdasdasdasd</p>
+    <p>
+        <asp:Label ID="lblName" runat="server" Text="Name:"></asp:Label>
+        <asp:TextBox ID="txtName" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+    </p>
+    <p>
+        &nbsp;<asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
+        <asp:TextBox ID="txtEmail" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+    </p>
+    <p>
+        &nbsp;<asp:Label ID="lblSubject" runat="server" Text="Subject:"></asp:Label>
+        <asp:TextBox ID="txtSubject" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+    </p>
+    <p>
+        &nbsp;<asp:Label ID="lblMessage" runat="server" Text="Message:"></asp:Label>
+        <asp:TextBox ID="txtBody" runat="server" BorderColor="Black" BorderWidth="1px" TextMode="MultiLine"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Button ID="btnSendEmail" runat="server" OnClick="Button1_Click" Text="Send" />
+        <asp:Literal ID="litResult" runat="server"></asp:Literal>
     </p>
     </div>
     </div>
