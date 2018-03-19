@@ -20,7 +20,9 @@
         <ul>
             <li><a href="~/Default.aspx" runat="server">Home</a></li>
             <li><a href="~/About.aspx" runat="server">About</a></li>
-            <li><a href="~/ContactUs.aspx" runat="server">Contact Us</a></li>   
+            <li><a href="~/ContactUs.aspx" runat="server">Contact Us</a></li> 
+            <li><a href="~/Register.aspx" runat="server">Register</a></li>
+            <li><a href="~/Login.aspx" runat="server">Login</a></li>
         </ul>
     </div>
 

@@ -31,7 +31,7 @@ namespace _1626491_CO5027
 
             msg = new MailMessage("1626491@gmail.com", "1626491@gmail.com");
             msg.Subject = txtSubject.Text;
-            msg.Body = txtBody.Text + " from " + txtEmail.Text;
+            msg.Body = txtBody.Text + " from " + txtName.Text + " @ " + txtEmail.Text;
 
             try
             {
