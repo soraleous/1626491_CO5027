@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _1626491_CO5027 {
+namespace _1626491_CO5027.Admin {
     
     
-    public partial class Database {
+    public partial class WebForm1 {
         
         /// <summary>
-        /// GridView1 control.
+        /// FormView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.FormView FormView1;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -31,12 +31,12 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// FormView1 control.
+        /// CurrentImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.Image CurrentImage;
     }
 }
