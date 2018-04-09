@@ -25,11 +25,12 @@ namespace _1626491_CO5027
             var manager = new UserManager<IdentityUser>(userStore);
             //create user
             var user = new IdentityUser() { UserName = txtRegEmail.Text, Email = txtRegEmail.Text };
+            //The code below doesnt work
             IdentityResult result = manager.Create(user, txtRegPassword.Text);
             if (result.Succeeded)
             {
-                //todo:Either authenticate the user (log them in) or redirect them to the login page to login for themselves
-
+                //delete this todo:Either authenticate the user (log them in) or redirect them to the login page to login for themselves
+                
             }
             else
             {

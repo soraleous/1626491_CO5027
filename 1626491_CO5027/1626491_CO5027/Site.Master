@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>My New Webpage</title>
+    <title></title>
     <asp:ContentPlaceHolder ID="headContentPlaceholder" runat="server">
     </asp:ContentPlaceHolder>
     <link href="~/Styles.css" rel="stylesheet" type="text/css" />

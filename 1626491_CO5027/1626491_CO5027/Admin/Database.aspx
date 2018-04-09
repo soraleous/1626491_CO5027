@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Database.aspx.cs" Inherits="_1626491_CO5027.Database" %>
+﻿<%@ Page Title="Database | Titleofwebsite" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Database.aspx.cs" Inherits="_1626491_CO5027.Database" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellSpacing="-1" DataKeyNames="ID" DataSourceID="SqlDataSource1" GridLines="None">

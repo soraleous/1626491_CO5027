@@ -26,6 +26,8 @@ namespace _1626491_CO5027
             if (user != null)
             {
                 //todo: log user in / instruct user to log in
+                // supposed to call LogUserIn method here, with passing the usermanager and user items into the method
+
             }
             else
             {

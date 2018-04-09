@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="_1626491_CO5027.WebForm4" %>
+﻿<%@ Page Title="Register | Titleofwebsite" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="_1626491_CO5027.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
+  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <asp:Label ID="lblUsername" runat="server" Text="Username (Email):"></asp:Label>

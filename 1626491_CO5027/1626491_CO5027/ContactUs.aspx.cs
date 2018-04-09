@@ -31,8 +31,11 @@ namespace _1626491_CO5027
 
             msg = new MailMessage("1626491@gmail.com", "1626491@gmail.com");
             msg.Subject = txtSubject.Text;
-            msg.Body = txtBody.Text + " from " + txtName.Text + " @ " + txtEmail.Text;
+            msg.Body = "You have a new message from " + txtName.Text + " @ " + txtEmail.Text + txtBody.Text;
 
+            msg = new MailMessage("1626491@gmail.com", txtEmail.Text);
+            msg.Subject = "Email Received";
+            msg.Body = "Hello Sir/Madam, We had received your email and would reply you as soon as possible";
             try
             {
                 smtpClient.Send(msg);
