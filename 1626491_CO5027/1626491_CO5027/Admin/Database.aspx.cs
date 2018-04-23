@@ -18,6 +18,7 @@ namespace _1626491_CO5027
         protected void btnLogOut_Click(object sender, EventArgs e)
         {
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Response.Redirect("~/Login.aspx");
         }
 
         protected void btnEdit_Click(object sender, EventArgs e)
