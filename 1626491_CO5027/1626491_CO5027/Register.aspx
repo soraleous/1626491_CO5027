@@ -7,7 +7,7 @@
     <asp:TextBox ID="txtRegEmail" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
     <br />
     <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
-    <asp:TextBox ID="txtRegPassword" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+    <asp:TextBox ID="txtRegPassword" runat="server" BorderColor="Black" BorderWidth="1px" TextMode="Password"></asp:TextBox>
     <br />
     <asp:Button ID="btnRegister" runat="server" OnClick="Button1_Click" Text="Register" />
     <br />

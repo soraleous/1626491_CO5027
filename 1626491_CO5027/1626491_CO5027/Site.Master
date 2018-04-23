@@ -1,9 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="_1626491_CO5027.Site1" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head runat="server">
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
     <title></title>
     <asp:ContentPlaceHolder ID="headContentPlaceholder" runat="server">

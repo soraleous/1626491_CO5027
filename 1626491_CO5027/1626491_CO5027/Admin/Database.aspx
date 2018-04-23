@@ -33,4 +33,7 @@
             <asp:Parameter Name="original_Stock" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    <asp:Button ID="btnEdit" runat="server" OnClick="btnEdit_Click" Text="Edit" />
+    <br />
+    <asp:Button ID="btnLogOut" runat="server" OnClick="btnLogOut_Click" Text="Logout" />
 </asp:Content>
