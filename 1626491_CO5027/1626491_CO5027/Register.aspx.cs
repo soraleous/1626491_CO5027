@@ -18,18 +18,26 @@ namespace _1626491_CO5027
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //create a dbcontect that specified the connection string
             var identityDbContext = new IdentityDbContext("IdentityConnectionstring");
-            //create user store and user manager
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
-            //create user
-            var user = new IdentityUser() { UserName = txtRegEmail.Text, Email = txtRegEmail.Text };
-            //The code below doesnt work
+
+            IdentityRole identityRole = new IdentityRole("Admin");
+            roleManager.Create(identityRole);
+
+            var user = new IdentityUser() {
+                UserName = txtRegEmail.Text,
+                Email = txtRegEmail.Text
+            };
+
             IdentityResult result = manager.Create(user, txtRegPassword.Text);
             if (result.Succeeded)
             {
-                //delete this todo:Either authenticate the user (log them in) or redirect them to the login page to login for themselves
+                manager.AddToRole(user.Id, "Admin");
+                manager.Update(user);
+                litRegisterError.Text = "Registration Successful";
                 
             }
             else

@@ -25,9 +25,8 @@ namespace _1626491_CO5027
             var user = userManager.Find(txtLoginEmail.Text, txtLoginPassword.Text);
             if (user != null)
             {
-                //todo: log user in / instruct user to log in
-                // supposed to call LogUserIn method here, with passing the usermanager and user items into the method
-
+                LogUserIn(userManager, user);
+                litLoginError.Text = "Login Successful";
             }
             else
             {
@@ -41,6 +40,18 @@ namespace _1626491_CO5027
             authenticationManager.SignIn(new Microsoft.Owin.Security.AuthenticationProperties() { }, userIdentity);
             //Note: user is automatically redirected if trying to access another page
 
+            if (Request.QueryString["~/Register.aspx"] != null)
+            {
+                Response.Redirect(Request.QueryString["~/Register.aspx"]);
+            }
+            else
+            {
+                String UserRoles = userManager.GetRoles(user.Id).FirstOrDefault();
+                if (UserRoles.Equals("Admin"))
+                {
+                    Response.Redirect("~/Admin/Database.aspx");
+                }
+            }
         }
     }
 }
