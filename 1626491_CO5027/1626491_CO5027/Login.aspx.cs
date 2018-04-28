@@ -17,7 +17,7 @@ namespace _1626491_CO5027
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnLogin_Click(object sender, EventArgs e)
         {
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
             var userStore = new UserStore<IdentityUser>(identityDbContext);

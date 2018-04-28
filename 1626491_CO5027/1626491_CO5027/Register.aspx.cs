@@ -16,33 +16,38 @@ namespace _1626491_CO5027
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnRegister_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionstring");
-            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
-            var roleManager = new RoleManager<IdentityRole>(roleStore);
-            var userStore = new UserStore<IdentityUser>(identityDbContext);
-            var manager = new UserManager<IdentityUser>(userStore);
-
-            IdentityRole identityRole = new IdentityRole("Admin");
-            roleManager.Create(identityRole);
-
-            var user = new IdentityUser() {
-                UserName = txtRegEmail.Text,
-                Email = txtRegEmail.Text
-            };
-
-            IdentityResult result = manager.Create(user, txtRegPassword.Text);
-            if (result.Succeeded)
+            Page.Validate();
+            if (Page.IsValid)
             {
-                manager.AddToRole(user.Id, "Admin");
-                manager.Update(user);
-                litRegisterError.Text = "Registration Successful";
-                 
-            }
-            else
-            {
-                litRegisterError.Text = "An error has occurred: " + result.Errors.FirstOrDefault();
+                var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+                var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+                var roleManager = new RoleManager<IdentityRole>(roleStore);
+                var userStore = new UserStore<IdentityUser>(identityDbContext);
+                var manager = new UserManager<IdentityUser>(userStore);
+
+                IdentityRole identityRole = new IdentityRole("Admin");
+                roleManager.Create(identityRole);
+
+                var user = new IdentityUser()
+                {
+                    UserName = txtRegEmail.Text,
+                    Email = txtRegEmail.Text
+                };
+
+                IdentityResult result = manager.Create(user, txtRegPassword.Text);
+                if (result.Succeeded)
+                {
+                    manager.AddToRole(user.Id, "Admin");
+                    manager.Update(user);
+                    litRegisterError.Text = "Registration Successful";
+
+                }
+                else
+                {
+                    litRegisterError.Text = "An error has occurred: " + result.Errors.FirstOrDefault();
+                }
             }
         }
     }

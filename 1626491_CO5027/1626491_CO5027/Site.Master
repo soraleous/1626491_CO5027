@@ -8,13 +8,13 @@
     <title></title>
     <asp:ContentPlaceHolder ID="headContentPlaceholder" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="~/CSS/Styles.css" rel="stylesheet" type="text/css" />
+    <link href="~/CSS/Styles.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="page">
     <div id="header">
-        <h1>Heading 1</h1>
+        <h1>HyperPadz</h1>
     </div>
 
     <div id="menu">

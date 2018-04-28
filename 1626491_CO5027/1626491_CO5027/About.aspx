@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About Us | Titleofwebsite" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="_1626491_CO5027.WebForm3" %>
+﻿<%@ Page Title="About Us | HyperPadz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="_1626491_CO5027.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
     
 </asp:Content>

@@ -49,6 +49,33 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtRegPassword;
         
         /// <summary>
+        /// lblCnfPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCnfPassword;
+        
+        /// <summary>
+        /// txtCnfPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCnfPassword;
+        
+        /// <summary>
+        /// cmpValPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cmpValPassword;
+        
+        /// <summary>
         /// btnRegister control.
         /// </summary>
         /// <remarks>

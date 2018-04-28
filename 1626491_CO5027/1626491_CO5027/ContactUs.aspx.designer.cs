@@ -31,6 +31,15 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
+        /// reqValName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValName;
+        
+        /// <summary>
         /// lblEmail control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace _1626491_CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        
+        /// <summary>
+        /// reqValEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValEmail;
         
         /// <summary>
         /// lblSubject control.
@@ -67,6 +85,15 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtSubject;
         
         /// <summary>
+        /// reqValSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValSubject;
+        
+        /// <summary>
         /// lblMessage control.
         /// </summary>
         /// <remarks>
@@ -85,6 +112,15 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtBody;
         
         /// <summary>
+        /// reqValBody control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValBody;
+        
+        /// <summary>
         /// btnSendEmail control.
         /// </summary>
         /// <remarks>
@@ -101,5 +137,14 @@ namespace _1626491_CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal litResult;
+        
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }
 }
