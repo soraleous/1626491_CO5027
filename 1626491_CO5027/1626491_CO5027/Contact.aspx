@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Contact Us | HyperPadz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="_1626491_CO5027.WebForm2" %>
+﻿<%@ Page Title="Contact Us | HyperPadz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="_1626491_CO5027.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
-    
+    <script src="Scripts/googlemap.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <h2>Contact Us</h2>
@@ -34,6 +34,11 @@
         <asp:Literal ID="litResult" runat="server"></asp:Literal>
     </p>
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+    <br />
+    <div id="map"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl_dTpeM9vWe7eXl_fFn6an6unXFmIKvY&callback=initMap">
+    </script>
    
    
 </asp:Content>

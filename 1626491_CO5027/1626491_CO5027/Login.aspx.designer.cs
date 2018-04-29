@@ -13,13 +13,13 @@ namespace _1626491_CO5027 {
     public partial class WebForm5 {
         
         /// <summary>
-        /// Label1 control.
+        /// lblUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblUsername;
         
         /// <summary>
         /// txtLoginEmail control.
@@ -31,13 +31,13 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtLoginEmail;
         
         /// <summary>
-        /// Label2 control.
+        /// lblPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblPassword;
         
         /// <summary>
         /// txtLoginPassword control.

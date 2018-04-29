@@ -5,21 +5,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
 <h2>
     My Page Content</h2>
-<p>
-    Lorem ipsum
-</p>
-<p>
-    dfsfsdfsdf
-</p>
-<p>
-    Pellen
-</p>
-<p>
-    Nunc laoreet viverra diam, at consectetur ante rhoncus at. Mauris pellentesque 
-    tincidunt sapi
-</p>
-<p>
-    Sed eget nisi ipsum, a feugiat ante. Mauris a quam erat, ac rhoncus mauris. Nunc 
-    laoreet bland
-</p>
+<p>Lorem ipsum</p>
+    <asp:Repeater ID="rptrProducts" runat="server" DataSourceID="HomeRepeaterSQL">
+    <HeaderTemplate><ul></HeaderTemplate>
+        <ItemTemplate>
+            <li>
+                <a href="<%# Eval("ID", "ViewProduct.aspx?ID={0}") %>">
+                    <%#Eval ("Name") %>
+                </a>
+            </li>
+        </ItemTemplate>
+        <FooterTemplate></ul></FooterTemplate>
+    </asp:Repeater>
+    <asp:SqlDataSource ID="HomeRepeaterSQL" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblProducts]"></asp:SqlDataSource>
+<br />
+
 </asp:Content>

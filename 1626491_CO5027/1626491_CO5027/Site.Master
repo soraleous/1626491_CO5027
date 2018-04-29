@@ -8,31 +8,31 @@
     <title></title>
     <asp:ContentPlaceHolder ID="headContentPlaceholder" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="~/CSS/Styles.css" rel="stylesheet" />
+    <link href="~/CSS/styles.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="page">
-    <div id="header">
-        <h1>HyperPadz</h1>
-    </div>
+        <div id="page">
+            <div id="header">
+                <h1>HyperPadz</h1>
+            </div>
 
-    <div id="menu">
-        <ul>
-            <li><a href="~/Default.aspx" runat="server">Home</a></li>
-            <li><a href="~/About.aspx" runat="server">About</a></li>
-            <li><a href="~/ContactUs.aspx" runat="server">Contact Us</a></li> 
-            <li><a href="~/Register.aspx" runat="server">Register</a></li>
-            <li><a href="~/Login.aspx" runat="server">Login</a></li>
-        </ul>
-    </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="~/Default.aspx" runat="server">Home</a></li>
+                    <li><a href="~/About.aspx" runat="server">About</a></li>
+                    <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li> 
+                    <li><a href="~/Register.aspx" runat="server">Register</a></li>
+                    <li><a href="~/Login.aspx" runat="server">Login</a></li>
+                </ul>
+            </div>
 
-    <div id="content">
-        <asp:ContentPlaceHolder id="mainContentPlaceHolder" runat="server">
+            <div id="content">
+            <asp:ContentPlaceHolder id="mainContentPlaceHolder" runat="server">
         
-        </asp:ContentPlaceHolder>
-    </div>
-    </div>
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
     </form>
 </body>
 </html>

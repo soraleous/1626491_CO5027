@@ -3,10 +3,10 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Username (Email):"></asp:Label>
+    <asp:Label ID="lblUsername" runat="server" Text="Username (Email):"></asp:Label>
     <asp:TextBox ID="txtLoginEmail" runat="server" BorderWidth="1px"></asp:TextBox>
     <br />
-    <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
+    <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
     <asp:TextBox ID="txtLoginPassword" runat="server" BorderWidth="1px" TextMode="Password"></asp:TextBox>
     <br />
     <asp:Button ID="btnLogin" runat="server" OnClick="BtnLogin_Click" Text="Login" Width="36px" />

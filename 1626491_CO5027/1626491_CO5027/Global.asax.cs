@@ -12,7 +12,7 @@ namespace _1626491_CO5027
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            string JQueryVer = "3.2.1";
+            string JQueryVer = "3.3.1";
             ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
             {
                 Path = "~/Scripts/jquery-" + JQueryVer + ".min.js",

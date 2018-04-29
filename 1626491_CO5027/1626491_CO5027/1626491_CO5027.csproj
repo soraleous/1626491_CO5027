@@ -103,14 +103,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Database.aspx" />
-    <Content Include="Admin\Edit.aspx" />
+    <Content Include="Admin\Add.aspx" />
     <Content Include="Admin\Upload.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="ContactUs.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Admin\Web.config" />
+    <Content Include="Scripts\googlemap.js" />
+    <Content Include="ViewProduct.aspx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -130,7 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="CSS\Styles.css" />
+    <Content Include="CSS\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -141,12 +143,12 @@
     <Compile Include="Admin\Database.aspx.designer.cs">
       <DependentUpon>Database.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
+    <Compile Include="Admin\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
+    <Compile Include="Admin\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Upload.aspx.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
@@ -173,12 +175,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ContactUs.aspx.cs">
-      <DependentUpon>ContactUs.aspx</DependentUpon>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ContactUs.aspx.designer.cs">
-      <DependentUpon>ContactUs.aspx</DependentUpon>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -201,6 +203,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduct.aspx.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProduct.aspx.designer.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

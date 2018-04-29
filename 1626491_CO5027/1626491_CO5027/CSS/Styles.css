@@ -54,3 +54,10 @@ id of "header" */
 	height:100px;
 	background-color:#AAFFAA;
 }
+
+/*Map CSS below*/
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}

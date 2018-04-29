@@ -15,15 +15,15 @@ namespace _1626491_CO5027
 
         }
 
-        protected void btnLogOut_Click(object sender, EventArgs e)
+        protected void BtnLogOut_Click(object sender, EventArgs e)
         {
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             Response.Redirect("~/Login.aspx");
         }
 
-        protected void btnEdit_Click(object sender, EventArgs e)
+        protected void BtnEdit_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Admin/Edit.aspx");
+            Response.Redirect("~/Admin/Add.aspx");
         }
     }
 }

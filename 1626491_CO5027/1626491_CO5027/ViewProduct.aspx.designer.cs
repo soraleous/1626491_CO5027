@@ -10,24 +10,24 @@
 namespace _1626491_CO5027 {
     
     
-    public partial class WebForm1 {
+    public partial class WebForm6 {
         
         /// <summary>
-        /// rptrProducts control.
+        /// FormView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrProducts;
+        protected global::System.Web.UI.WebControls.FormView FormView1;
         
         /// <summary>
-        /// HomeRepeaterSQL control.
+        /// ViewProductFormView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource HomeRepeaterSQL;
+        protected global::System.Web.UI.WebControls.SqlDataSource ViewProductFormView;
     }
 }
