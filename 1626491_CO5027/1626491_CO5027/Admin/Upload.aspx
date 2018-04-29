@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <asp:FileUpload ID="imageFileUploadControl" runat="server" />
     <br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Upload" />
+    <asp:Button ID="BtnUpload" runat="server" OnClick="BtnUpload_Click" Text="Upload" />
     <br />
     <asp:Image ID="CurrentImage" runat="server" Height="156px" Width="151px" />
     <br />

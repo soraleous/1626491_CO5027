@@ -10,7 +10,7 @@
     <HeaderTemplate><ul></HeaderTemplate>
         <ItemTemplate>
             <li>
-                <a href="<%# Eval("ID", "ViewProduct.aspx?ID={0}") %>">
+                <a href="<%# Eval("ID", "Product.aspx?ID={0}") %>">
                     <%#Eval ("Name") %>
                 </a>
             </li>

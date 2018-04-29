@@ -11,10 +11,7 @@ namespace _1626491_CO5027.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string productId = Request.QueryString["ProductId"];
-            string filename = productId + ".jpg";
 
-            CurrentImage.ImageUrl = "~/ProductImages/" + filename;
         }
     }
 }

@@ -22,13 +22,13 @@ namespace _1626491_CO5027.Admin {
         protected global::System.Web.UI.WebControls.FileUpload imageFileUploadControl;
         
         /// <summary>
-        /// Button1 control.
+        /// BtnUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnUpload;
         
         /// <summary>
         /// CurrentImage control.

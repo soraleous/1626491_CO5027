@@ -11,15 +11,15 @@ namespace _1626491_CO5027.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string productId = Request.QueryString["Id"];
+            string productId = Request.QueryString["ID"];
             string filename = productId + ".jpg";
 
             CurrentImage.ImageUrl = "~/ProductImages/" + filename;
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnUpload_Click(object sender, EventArgs e)
         {
-            string productId = Request.QueryString["Id"];
+            string productId = Request.QueryString["ID"];
 
             string filename = productId + ".jpg";
             string saveLocation = Server.MapPath("~/ProductImages/" + filename);

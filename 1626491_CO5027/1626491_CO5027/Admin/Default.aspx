@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Admin Database | HyperPadz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Database.aspx.cs" Inherits="_1626491_CO5027.Database" %>
+﻿<%@ Page Title="Admin Database | HyperPadz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_1626491_CO5027.Database" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
 
 </asp:Content>
@@ -18,6 +18,7 @@
             </asp:BoundField>
             <asp:BoundField DataField="Stock" HeaderText="Stock" SortExpression="Stock">
             </asp:BoundField>
+            <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="Upload.aspx?id={0}" Text="Set Image" />
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="DatabaseGridViewSQL" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" DeleteCommand="DELETE FROM [tblProducts] WHERE [ID] = @original_ID AND [Name] = @original_Name AND [ModelCode] = @original_ModelCode AND [Size] = @original_Size AND [Price] = @original_Price AND [Stock] = @original_Stock" InsertCommand="INSERT INTO [tblProducts] ([Name], [ModelCode], [Size], [Price], [Stock]) VALUES (@Name, @ModelCode, @Size, @Price, @Stock)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblProducts]" UpdateCommand="UPDATE [tblProducts] SET [Name] = @Name, [ModelCode] = @ModelCode, [Size] = @Size, [Price] = @Price, [Stock] = @Stock WHERE [ID] = @original_ID AND [Name] = @original_Name AND [ModelCode] = @original_ModelCode AND [Size] = @original_Size AND [Price] = @original_Price AND [Stock] = @original_Stock">
@@ -55,7 +56,7 @@
             <asp:ControlParameter ControlID="DatabaseGridView" Name="ID" PropertyName="SelectedValue" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="DatabaseFormViewSQL">
+    <asp:FormView ID="DatabaseFormView" runat="server" DataKeyNames="ID" DataSourceID="DatabaseFormViewSQL">
         <EditItemTemplate>
             ID:
             <asp:Label ID="IDLabel1" runat="server" Text='<%# Eval("ID") %>' />
