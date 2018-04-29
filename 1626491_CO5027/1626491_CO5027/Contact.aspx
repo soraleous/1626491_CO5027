@@ -3,6 +3,7 @@
     <script src="Scripts/googlemap.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+    <section class="alt2">
     <h2>Contact Us</h2>
     <p>
         ASDASDASdgijsdvjawi4etjspdofsodgksclgvkgs
@@ -39,6 +40,7 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl_dTpeM9vWe7eXl_fFn6an6unXFmIKvY&callback=initMap">
     </script>
+    </section>
    
    
 </asp:Content>

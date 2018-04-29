@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+    <section class="alt2">
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="ViewProductFormView">
         <EditItemTemplate>
             ID:
@@ -71,4 +72,5 @@
             <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
+    </section>
 </asp:Content>

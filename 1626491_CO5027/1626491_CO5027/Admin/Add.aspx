@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+    <section class="alt2">
     <asp:FormView ID="DatabaseFormView" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1" AllowPaging="True" DefaultMode="Insert" RenderOuterTable="False">
         <EditItemTemplate>
             ID:
@@ -108,4 +109,5 @@
             <asp:Parameter Name="original_Stock" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    </section>
 </asp:Content>

@@ -1,0 +1,243 @@
+﻿/* Main elements
+---------------------------------------- */
+body {
+	/* Background image obtained from 
+	http://bozhuwallpaper.com/black-abstract-wallpapers-high-resolution/ */
+	background:url('../Images/background/blk_abs_background.jpg') no-repeat center center fixed #1C1C1C;
+	background-size: cover;
+	font-family: Lato, 'Open Sans', "sans-serif";
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #000000;
+	margin: 10px auto 20px auto;
+}
+p {
+	margin: 5px 0;
+	font-family: Lato, 'Open Sans';
+	line-height: 28px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s ease;
+}
+strong {
+	font-weight: bold;
+}
+h2 {
+	text-align:center;
+	font-family:'Open Sans', Lato;
+}
+h3 {
+	font-family: Lato, 'Open Sans'
+}
+/* Header elements
+---------------------------------------- */
+header {
+	position: relative;
+	width: auto;
+	max-width: 960px;
+	margin: 10px auto 20px auto;
+}
+header h1 {
+	text-align: center;
+	margin: 0 0 0 0;
+	font-size: 55px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+/* Footer elements
+-------------------------------------------*/
+footer {
+	width:auto;
+	height:125px;
+	max-width: 960px;
+	position: relative;
+	margin: 0 auto 0 auto;
+	clear:both;
+}
+footer.wrapper {
+	line-height:25px;
+	margin: 0 auto;
+	padding-top:30px;
+	width:auto;
+	max-width:960px;
+	font-size:14px;
+}
+#copyright {
+	height:70px;
+	position:relative;
+	width:100%;
+	bottom:0;
+	left:0;
+	max-width:960px;
+}
+#copyright .wrapper {
+	font-family:'Open Sans',Lato,"sans-serif";
+	padding-top:25px;
+	font-size:15px;
+	position:relative;
+}
+#copyright .wrapper .links1 {
+	position:absolute;
+	right: 0;
+	top:25px;
+}
+#copyright .wrapper .links1 a {
+	margin-left: 12px;
+	display:block;
+}
+/*Map CSS below*/
+#map {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}
+
+/* Login Page Div elements
+------------------------------------------*/
+.group1 {
+	width:auto;
+	max-width:960px;
+	margin: 0 auto 20px auto;
+}
+
+/* Section elements
+-------------------------------------------*/
+section {
+	border-radius: 10px;
+	position: relative;
+	margin: 0 auto 20px auto;
+}
+section.alt1 {
+	background: rgba(132, 131, 131, 0.85);
+	padding: 1px 15px 15px 15px;
+	max-width: 960px;
+}
+section.alt2 {
+	background: rgba(132, 131, 131, 0.85);
+	padding: 1px 15px 15px 15px;
+	max-width: 900px;
+}
+section.alt3 {
+	background: rgba(132, 131, 131, 0.7);
+	float:left;
+	width:50%;
+}
+section h2 {
+	text-align:center;
+	font-family:'Open Sans', Lato;
+}
+section h3 {
+    text-align:center;
+    font-family:'Open Sans', Lato;
+}
+
+/* Aside elements
+------------------------------------------*/
+aside {
+	border-radius: 10px;
+	background: rgba(132, 131, 131, 0.85);
+	float:right;
+	width: 45%;
+}
+/* Article elements
+-----------------------------------------*/
+article {
+	width:auto;
+	margin: 10px 10px 10px 10px;
+}
+article h3 {
+	line-height:25px;
+	font-family: Lato, 'Open Sans';
+	margin: 25px 10px auto 10px;
+}
+article h3.h3a {
+	text-align:center;
+	font-size:17px;
+}
+article h4 {
+	padding: 0 10px 0 10px;
+	margin: 10px 10px 0 0px;
+}
+article h4.h4a {
+	text-align:center;
+	font-size:16px;
+}
+article p {
+	padding: 4px 10px 4px 20px;
+}
+article p.p1 {
+	text-align:left;
+	padding: 2px;
+}
+article p.p1:hover {
+	opacity: 0.7;
+	text-decoration:underline;
+}
+article img {
+	display:inline-block;
+	padding:5px 7px 6px 7px;
+	margin:10px 10px auto 10px;
+	width: auto;
+	max-width: 250px;
+	height: auto;
+	max-height: 130px;
+}
+article a {
+	font-size: 13px;
+}
+article a.a1 {
+	font-size: 15px;
+}
+article a.button1 {
+	text-align: center;
+	border-radius: 9px;
+	margin:5px 10px 10px 10px;
+	color: #B82601;
+	padding: 4px 5px 5px 5px;
+	background: rgba(7, 6, 8, 0.8);
+}
+article a.button1:hover {
+	opacity: 0.8;
+}
+
+/* Figure Elements
+------------------------------------------*/
+figure {
+	margin: 5px 10px 5px 1px;
+	padding: 4px 10px 4px 10px;
+}
+figcaption {
+	padding: 4px 10px 0 20px;
+}
+figure li {
+	line-height: 24px;
+	padding: 0 10px 4px 10px;
+}
+
+/* Navigation Bar elements
+-----------------------------------------*/
+nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+nav ul li {
+	display: inline-block;
+	padding: 0 15px 15px 15px;
+}
+nav ul li a {
+	font-family: 'Open Sans', Lato;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: all .30s ease;
+}
+nav ul li a:hover {
+	opacity: 0.5;
+}
+nav ul li a:active {
+	transform: translateY(4px);
+}
+nav ul li a.current {
+	color: #B82601;
+}

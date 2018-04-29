@@ -3,10 +3,12 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+    <section class="alt2">
     <asp:FileUpload ID="imageFileUploadControl" runat="server" />
     <br />
     <asp:Button ID="BtnUpload" runat="server" OnClick="BtnUpload_Click" Text="Upload" />
     <br />
     <asp:Image ID="CurrentImage" runat="server" Height="156px" Width="151px" />
     <br />
+    </section>
 </asp:Content>

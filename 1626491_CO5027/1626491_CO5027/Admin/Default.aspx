@@ -3,6 +3,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+    <section class="alt2">
     <h2>Admin Area - Database</h2>
     <asp:GridView ID="DatabaseGridView" runat="server" AutoGenerateColumns="False" CellSpacing="-1" DataKeyNames="ID" DataSourceID="DatabaseGridViewSQL" GridLines="None" CssClass="DatabaseGridView">
         <Columns>
@@ -124,4 +125,5 @@
     <asp:Button ID="BtnEdit" runat="server" OnClick="BtnEdit_Click" Text="Add Products" />
     <br />
     <asp:Button ID="BtnLogOut" runat="server" OnClick="BtnLogOut_Click" Text="Logout" />
+    </section>
 </asp:Content>

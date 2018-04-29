@@ -3,8 +3,10 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+<section class="alt2">
 <h2>About Us</h2>
     <p>ASDFIASDFGASJCBASIDFJGSDF</p>
     <p>asdfasdfsadfsadfsadfasdf</p>
     <p>It would appear that I will spammmmm</p>
+</section>
 </asp:Content>

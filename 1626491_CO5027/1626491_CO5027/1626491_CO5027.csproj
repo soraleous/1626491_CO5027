@@ -109,9 +109,11 @@
     <Content Include="Admin\Add.aspx" />
     <Content Include="Admin\Upload.aspx" />
     <Content Include="CSS\normalize.css" />
+    <Content Include="CSS\tzstyle.css" />
     <Content Include="Default.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="About.aspx" />
+    <Content Include="Images\Background\blk_abs_background.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Admin\Web.config" />
     <Content Include="Scripts\googlemap.js" />
@@ -135,7 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="CSS\styles.css" />
+    <Content Include="CSS\OLDstyles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
