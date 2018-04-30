@@ -13,7 +13,7 @@
                 <a href="<%# Eval("ID", "Product.aspx?ID={0}") %>">
                     <%#Eval ("Name") %>
                     <%#Eval ("Size") %>
-                    <img src="/ProductImages/<%#Eval("ID") %>.jpg" width="100" height="100" />
+                    <img src="ProductImages/<%#Eval("ID") %>.jpg" width="150" height="150" />
 
                 </a>
             </div>
