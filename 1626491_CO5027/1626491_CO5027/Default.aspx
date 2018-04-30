@@ -7,15 +7,18 @@
     <h2>My Page Content</h2>
     <p>Unfinished!</p>
     <asp:Repeater ID="rptrProducts" runat="server" DataSourceID="HomeRepeaterSQL">
-    <HeaderTemplate><ul></HeaderTemplate>
+    <HeaderTemplate><div id="RepeaterHeader"></HeaderTemplate>
         <ItemTemplate>
-            <li>
+            <div class="RepeaterItem">
                 <a href="<%# Eval("ID", "Product.aspx?ID={0}") %>">
                     <%#Eval ("Name") %>
+                    <%#Eval ("Size") %>
+                    <img src="/ProductImages/<%#Eval("ID") %>.jpg" width="100" height="100" />
+
                 </a>
-            </li>
+            </div>
         </ItemTemplate>
-        <FooterTemplate></ul></FooterTemplate>
+        <FooterTemplate></div></FooterTemplate>
     </asp:Repeater>
     <asp:SqlDataSource ID="HomeRepeaterSQL" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblProducts]"></asp:SqlDataSource>
 </section>

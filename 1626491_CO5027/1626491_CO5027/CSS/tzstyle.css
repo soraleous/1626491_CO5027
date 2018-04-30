@@ -101,6 +101,14 @@ footer.wrapper {
 	margin: 0 auto 20px auto;
 }
 
+/* Home Page Repeater Div elements*/
+.RepeaterItem {
+    display:inline-block;
+}
+#RepeaterHeader {
+    display:inline-block;
+}
+
 /* Section elements
 -------------------------------------------*/
 section {

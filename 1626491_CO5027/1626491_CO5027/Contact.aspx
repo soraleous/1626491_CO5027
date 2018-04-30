@@ -12,22 +12,22 @@
         asdasdasdasdasdasdsaasdasdasdasd</p>
     <p>
         <asp:Label ID="lblName" runat="server" Text="Name:"></asp:Label>
-        <asp:TextBox ID="txtName" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+        <asp:TextBox ID="txtName" runat="server" BorderStyle="None"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValName" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter a name">*</asp:RequiredFieldValidator>
     </p>
     <p>
         &nbsp;<asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
-        <asp:TextBox ID="txtEmail" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+        <asp:TextBox ID="txtEmail" runat="server" BorderStyle="None"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="Please enter an email address" ControlToValidate="txtEmail">*</asp:RequiredFieldValidator>
     </p>
     <p>
         &nbsp;<asp:Label ID="lblSubject" runat="server" Text="Subject:"></asp:Label>
-        <asp:TextBox ID="txtSubject" runat="server" BorderColor="Black" BorderWidth="1px"></asp:TextBox>
+        <asp:TextBox ID="txtSubject" runat="server" BorderStyle="None"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValSubject" runat="server" ErrorMessage="Please enter a Subject" ControlToValidate="txtSubject">*</asp:RequiredFieldValidator>
     </p>
     <p>
         &nbsp;<asp:Label ID="lblMessage" runat="server" Text="Message:"></asp:Label>
-        <asp:TextBox ID="txtBody" runat="server" BorderColor="Black" BorderWidth="1px" TextMode="MultiLine"></asp:TextBox>
+        <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine" BorderStyle="None"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValBody" runat="server" ErrorMessage="Please enter a message" ControlToValidate="txtBody">*</asp:RequiredFieldValidator>
     </p>
     <p>
