@@ -13,13 +13,22 @@ namespace _1626491_CO5027 {
     public partial class WebForm6 {
         
         /// <summary>
-        /// FormView1 control.
+        /// ProductFormView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.FormView ProductFormView;
+        
+        /// <summary>
+        /// ddlProductQuantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlProductQuantity;
         
         /// <summary>
         /// ViewProductFormView control.
@@ -29,5 +38,14 @@ namespace _1626491_CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource ViewProductFormView;
+        
+        /// <summary>
+        /// btnPurchaseProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPurchaseProduct;
     }
 }
