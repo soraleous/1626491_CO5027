@@ -26,7 +26,7 @@
         <br />
         <asp:Label ID="lblCnfPassword" runat="server" Text="Confirm password:"></asp:Label>
         <asp:TextBox ID="txtCnfPassword" runat="server" TextMode="Password" BorderStyle="None"></asp:TextBox>
-        <asp:CompareValidator ID="cmpValPassword" runat="server" ControlToCompare="txtCnfPassword" ControlToValidate="txtRegPassword" ErrorMessage="Password not matched!"></asp:CompareValidator>
+        <asp:CompareValidator ID="cmpValPassword" runat="server" ControlToCompare="txtRegPassword" ControlToValidate="txtCnfPassword" ErrorMessage="Password not matched!"></asp:CompareValidator>
         <br />
         <asp:Button ID="btnRegister" runat="server" OnClick="BtnRegister_Click" Text="Register" />
         <br />

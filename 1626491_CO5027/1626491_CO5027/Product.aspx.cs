@@ -78,9 +78,11 @@ namespace _1626491_CO5027
             var payer = new Payer();
             payer.payment_method = "paypal";
 
-            var redirectUrls = new RedirectUrls();
-            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "/Cancel.aspx";
-            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "/CompletePurchase.aspx";
+            var redirectUrls = new RedirectUrls
+            {
+                cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/Cancel.aspx",
+                return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/CompletePurchase.aspx"
+            };
 
             var payment = Payment.Create(apiContext, new Payment
             {
