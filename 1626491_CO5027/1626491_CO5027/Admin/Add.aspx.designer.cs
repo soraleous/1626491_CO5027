@@ -13,21 +13,39 @@ namespace _1626491_CO5027.Admin {
     public partial class WebForm1 {
         
         /// <summary>
-        /// DatabaseFormView control.
+        /// AddDatabaseFormView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView DatabaseFormView;
+        protected global::System.Web.UI.WebControls.FormView AddDatabaseFormView;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// DatabaseAddFormView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource DatabaseAddFormView;
+        
+        /// <summary>
+        /// BtnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBack;
+        
+        /// <summary>
+        /// BtnLogOut control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnLogOut;
     }
 }

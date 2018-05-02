@@ -8,9 +8,19 @@
     <title></title>
     <asp:ContentPlaceHolder ID="headContentPlaceholder" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="~/CSS/tzstyle.css" rel="stylesheet" />
+    <!-- CSS Files -->
     <!-- normalize.css obtained from Gallagher, n.d. -->
     <link href="~/CSS/normalize.css" rel="stylesheet" />
+    <link href="~/CSS/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato%7COpen+Sans" rel="stylesheet"/>	
+    <!-- Scripts -->
+	<!-- modernizr-custom.js obtained from Modernizr, n.d. -->
+	<script src="Scripts/modernizr-custom.js"></script>
+    <!-- respond.min.js obtained from Jehl, n.d. -->
+	<script src="Scripts/respond.min.js"></script>
+    <!-- prefixfree.min.js obtained from Verou, n.d. -->
+	<script src="Scripts/prefixfree.min.js"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,7 +31,6 @@
                 <nav>
                     <ul>
                         <li><a href="~/Default.aspx" runat="server">Home</a></li>
-                        <li><a href="~/About.aspx" runat="server">About</a></li>
                         <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li> 
                         <li><a href="~/Login.aspx" runat="server">Login</a></li>
                     </ul>
@@ -46,7 +55,7 @@
                     alt="Valid HTML!"/></a>
                 <a href="~/Admin/" runat="server">Admin</a>
     			</div>
-    			&copy; Copyright 2018 Tao Zhen. No Rights Reserved.
+    			<p>&copy; Copyright 2018 Tao Zhen. No Rights Reserved.</p>
     		</div>
     		</section>
         </footer>

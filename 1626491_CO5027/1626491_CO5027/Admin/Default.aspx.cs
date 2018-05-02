@@ -25,5 +25,10 @@ namespace _1626491_CO5027
         {
             Response.Redirect("~/Admin/Add.aspx");
         }
+
+        protected void DatabaseFormView_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
+        {
+            DatabaseGridView.DataBind();
+        }
     }
 }

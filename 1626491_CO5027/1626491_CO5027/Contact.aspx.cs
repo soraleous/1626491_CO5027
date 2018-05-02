@@ -35,20 +35,20 @@ namespace _1626491_CO5027
 
                 msg = new MailMessage("1626491@gmail.com", "1626491.hyperpadz@gmail.com")
                 {
-                    Subject = txtSubject.Text,
+                    Subject = ddltxtSubject.Text,
                     Body = "You have a new message from " + txtName.Text + " @ " + txtEmail.Text + " : " + txtBody.Text
                 };
 
                 msg2 = new MailMessage("1626491@gmail.com", txtEmail.Text)
                 {
-                    Subject = "Email Received",
+                    Subject = "Email Received | HyperPadz",
                     Body = "Hello Sir/Madam, We have received your email and would reply you as soon as possible!"
                 };
                 try
                 {
                     smtpClient.Send(msg);
                     smtpClient.Send(msg2);
-                    litResult.Text = "<p>Success, mail sent using SMTP with secure connection and credentials</p>";
+                    litResult.Text = "<p>Success! Message received.</p>";
                     txtBody.Text = "";
                 }
                 catch (Exception ex)

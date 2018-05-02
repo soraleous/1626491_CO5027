@@ -5,7 +5,7 @@ body {
 	http://bozhuwallpaper.com/black-abstract-wallpapers-high-resolution/ */
 	background:url('../Images/background/blk_abs_background.jpg') no-repeat center center fixed #1C1C1C;
 	background-size: cover;
-	font-family: Lato, 'Open Sans', "sans-serif";
+	font-family: Lato, 'Open Sans', sans-serif;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 2px #000000;
 	margin: 10px auto 20px auto;
@@ -30,6 +30,7 @@ h2 {
 h3 {
 	font-family: Lato, 'Open Sans'
 }
+
 /* Header elements
 ---------------------------------------- */
 header {
@@ -72,8 +73,6 @@ footer.wrapper {
 	max-width:960px;
 }
 #copyright .wrapper {
-	font-family:'Open Sans',Lato,"sans-serif";
-	padding-top:25px;
 	font-size:15px;
 	position:relative;
 }
@@ -86,6 +85,7 @@ footer.wrapper {
 	margin-left: 12px;
 	display:block;
 }
+
 /*Map CSS below*/
 #map {
     height: 400px;
@@ -101,13 +101,62 @@ footer.wrapper {
 	margin: 0 auto 20px auto;
 }
 
+/* TextBox elements*/
+.txtBox1 {
+    border: 2px solid rgba(132, 131, 131, 0.85);
+    color: #1A2032;
+    margin: 0 0 5px;
+    width: 55%;
+    padding: 5px;
+    min-height: 20px;
+}
+.txtBox2 {
+    border: 2px solid rgba(132, 131, 131, 0.85);
+    color: #1A2032;
+    margin: 0 0 5px;
+    width: 70%;
+    padding: 5px;
+    min-height: 130px;
+}
+
 /* Home Page Repeater Div elements*/
 .RepeaterItem {
     display:inline-block;
+    position:relative;
+    width: auto;
+    max-width: 270px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: whitesmoke;
+    margin-bottom: 5px;
 }
 #RepeaterHeader {
-    display:inline-block;
+    max-width: 960px;
+    width:auto;
 }
+.img1 {
+    display: block;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    height: 175px;
+}
+.img1:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+#RepeaterHeader h4 {
+    text-align: center;
+    font-size: 15px;
+}
+#RepeaterHeader h4:hover {
+    opacity: 0.8;
+}
+
+
 
 /* Section elements
 -------------------------------------------*/
@@ -129,7 +178,8 @@ section.alt2 {
 section.alt3 {
 	background: rgba(132, 131, 131, 0.7);
 	float:left;
-	width:50%;
+    padding: 1px 15px 15px 15px;
+	width:45%;
 }
 section h2 {
 	text-align:center;
@@ -143,10 +193,15 @@ section h3 {
 /* Aside elements
 ------------------------------------------*/
 aside {
-	border-radius: 10px;
-	background: rgba(132, 131, 131, 0.85);
-	float:right;
-	width: 45%;
+    border-radius: 10px;
+    background: rgba(132, 131, 131, 0.85);
+    float: right;
+    padding: 1px 15px 15px 15px;
+    width: 45%;
+}
+aside h3{
+    text-align:center;
+	font-family:'Open Sans', Lato;
 }
 /* Article elements
 -----------------------------------------*/
@@ -197,16 +252,32 @@ article a {
 article a.a1 {
 	font-size: 15px;
 }
-article a.button1 {
+
+/* Button Elements
+------------------------------------------*/
+.button1 {
 	text-align: center;
 	border-radius: 9px;
-	margin:5px 10px 10px 10px;
+	margin:1px 1px 1px 1px;
 	color: #B82601;
 	padding: 4px 5px 5px 5px;
 	background: rgba(7, 6, 8, 0.8);
+    font-family: Lato, 'Open Sans';
 }
-article a.button1:hover {
+.button1:hover {
 	opacity: 0.8;
+}
+.button2 {
+    text-align: center;
+    border-radius: 8px;
+    margin: 1px 1px 1px 1px;
+    color: white;
+    padding: 4px 5px 5px 5px;
+    background: rgba(7, 6, 8, 0.8);
+    font-family: Lato, 'Open Sans';
+}
+.button2:hover {
+    opacity: 0.8;
 }
 
 /* Figure Elements
@@ -248,4 +319,16 @@ nav ul li a:active {
 }
 nav ul li a.current {
 	color: #B82601;
+}
+
+/* MISC elements
+-------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px); /* IE6 & 7 */
+    clip: rect(1px, 1px, 1px, 1px);
 }

@@ -5,33 +5,31 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <section class="alt2">
     <h2>Contact Us</h2>
-    <p>
-        ASDASDASdgijsdvjawi4etjspdofsodgksclgvkgs
-    </p>
-    <p>
-        asdasdasdasdasdasdsaasdasdasdasd</p>
-    <p>
-        <asp:Label ID="lblName" runat="server" Text="Name:"></asp:Label>
-        <asp:TextBox ID="txtName" runat="server" BorderStyle="None"></asp:TextBox>
+    <p>For All Inquiries, Please use the Contact Form below :-</p>
+        <asp:Label ID="lblName" runat="server" Text="Name:" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtName" runat="server" CssClass="txtBox1" placeholder="Name" MaxLength="100"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValName" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter a name">*</asp:RequiredFieldValidator>
-    </p>
     <p>
-        &nbsp;<asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
-        <asp:TextBox ID="txtEmail" runat="server" BorderStyle="None"></asp:TextBox>
+        <asp:Label ID="lblEmail" runat="server" Text="Email:" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtEmail" runat="server" CssClass="txtBox1" placeholder="Email"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="Please enter an email address" ControlToValidate="txtEmail">*</asp:RequiredFieldValidator>
     </p>
     <p>
-        &nbsp;<asp:Label ID="lblSubject" runat="server" Text="Subject:"></asp:Label>
-        <asp:TextBox ID="txtSubject" runat="server" BorderStyle="None"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="reqValSubject" runat="server" ErrorMessage="Please enter a Subject" ControlToValidate="txtSubject">*</asp:RequiredFieldValidator>
+        <asp:Label ID="lblSubject" runat="server" Text="Subject:" Visible="False"></asp:Label>
+        <asp:DropDownList ID="ddltxtSubject" runat="server" CssClass="txtBox1">
+            <asp:ListItem>Product Inquiry</asp:ListItem>
+            <asp:ListItem>Product Returns</asp:ListItem>
+            <asp:ListItem>Others</asp:ListItem>
+        </asp:DropDownList>
+        <asp:RequiredFieldValidator ID="reqValSubject" runat="server" ErrorMessage="Please select a subject" ControlToValidate="ddltxtSubject">*</asp:RequiredFieldValidator>
     </p>
     <p>
-        &nbsp;<asp:Label ID="lblMessage" runat="server" Text="Message:"></asp:Label>
-        <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine" BorderStyle="None"></asp:TextBox>
+        <asp:Label ID="lblMessage" runat="server" Text="Message:" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine" CssClass="txtBox2" placeholder="Message"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValBody" runat="server" ErrorMessage="Please enter a message" ControlToValidate="txtBody">*</asp:RequiredFieldValidator>
     </p>
     <p>
-        <asp:Button ID="btnSendEmail" runat="server" OnClick="BtnContact_Click" Text="Send" />
+        <asp:Button ID="btnSendEmail" runat="server" OnClick="BtnContact_Click" Text="Send" CssClass="button1" />
         <asp:Literal ID="litResult" runat="server"></asp:Literal>
     </p>
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" />

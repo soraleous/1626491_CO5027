@@ -19,18 +19,22 @@ namespace _1626491_CO5027
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
-            var userStore = new UserStore<IdentityUser>(identityDbContext);
-            var userManager = new UserManager<IdentityUser>(userStore);
-            var user = userManager.Find(txtLoginEmail.Text, txtLoginPassword.Text);
-            if (user != null)
+            Page.Validate();
+            if (Page.IsValid)
             {
-                LogUserIn(userManager, user);
-                litLoginError.Text = "Login Successful";
-            }
-            else
-            {
-                litLoginError.Text = "Invalid username or password.";
+                var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+                var userStore = new UserStore<IdentityUser>(identityDbContext);
+                var userManager = new UserManager<IdentityUser>(userStore);
+                var user = userManager.Find(txtLoginEmail.Text, txtLoginPassword.Text);
+                if (user != null)
+                {
+                    LogUserIn(userManager, user);
+                    litLoginError.Text = "Login Successful";
+                }
+                else
+                {
+                    litLoginError.Text = "Invalid username or password.";
+                }
             }
         }
         private void LogUserIn(UserManager<IdentityUser> userManager, IdentityUser user)

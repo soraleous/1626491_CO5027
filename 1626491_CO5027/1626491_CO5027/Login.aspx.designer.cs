@@ -31,6 +31,15 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtLoginEmail;
         
         /// <summary>
+        /// revLoginEmailVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revLoginEmailVal;
+        
+        /// <summary>
         /// lblPassword control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace _1626491_CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRegEmail;
+        
+        /// <summary>
+        /// revRegEmailVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revRegEmailVal;
         
         /// <summary>
         /// Label2 control.
