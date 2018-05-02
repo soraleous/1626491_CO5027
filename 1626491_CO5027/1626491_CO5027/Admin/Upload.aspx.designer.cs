@@ -13,13 +13,13 @@ namespace _1626491_CO5027.Admin {
     public partial class WebForm2 {
         
         /// <summary>
-        /// FormView1 control.
+        /// ULFormView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.FormView ULFormView;
         
         /// <summary>
         /// UploadFormView control.

@@ -104,7 +104,7 @@
             Name:
             <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
             <br />
-            ModelCode:
+            SKU:
             <asp:TextBox ID="ModelCodeTextBox" runat="server" Text='<%# Bind("ModelCode") %>' />
             <br />
             Size:
@@ -126,7 +126,7 @@
             Name:
             <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
             <br />
-            ModelCode:
+            SKU:
             <asp:TextBox ID="ModelCodeTextBox" runat="server" Text='<%# Bind("ModelCode") %>' />
             <br />
             Size:
@@ -151,7 +151,7 @@
             Name:
             <asp:Label ID="NameLabel" runat="server" Text='<%# Bind("Name") %>' />
             <br />
-            ModelCode:
+            SKU:
             <asp:Label ID="ModelCodeLabel" runat="server" Text='<%# Bind("ModelCode") %>' />
             <br />
             Size:

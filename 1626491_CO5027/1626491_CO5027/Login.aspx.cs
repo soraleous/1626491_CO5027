@@ -83,7 +83,7 @@ namespace _1626491_CO5027
                 {
                     manager.AddToRole(user.Id, "Admin");
                     manager.Update(user);
-                    litRegisterError.Text = "Registration Successful";
+                    litRegisterError.Text = "Registration Successful, Please Login";
 
                 }
                 else

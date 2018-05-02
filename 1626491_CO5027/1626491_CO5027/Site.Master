@@ -42,7 +42,9 @@
             </asp:ContentPlaceHolder>
             <!-- Footer Starts Here -->
         <footer>
+            <h2 class="hidden">The Footer</h2>
 			<section id="copyright">
+            <h3 class="hidden">Copyright Notice</h3>
 			<div class="wrapper">
 				<div class="links1">
 				<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">

@@ -6,7 +6,7 @@
     <section class="alt2">
         <h2>Admin Area - Image Uploads</h2>
         <br />
-        <asp:FormView ID="FormView1" runat="server" DataSourceID="UploadFormView">
+        <asp:FormView ID="ULFormView" runat="server" DataSourceID="UploadFormView">
             <EditItemTemplate>
                 Name:
                 <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
