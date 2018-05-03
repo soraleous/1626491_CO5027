@@ -17,6 +17,25 @@ namespace _1626491_CO5027
             string filename = productId + ".jpg";
 
             CurrentImage.ImageUrl = "~/ProductImages/" + filename;
+            GenerateDdlItems();
+        }
+
+        protected void GenerateDdlItems()
+        {
+            var fcStock = ProductFormView.FindControl("StockLabel") as Label;
+            string itemStock = fcStock.Text;
+            int cStock = int.Parse(itemStock);
+            // Code Adapted From https://stackoverflow.com/a/10450785
+            for (int i = 1; i <= cStock; i++)
+            {
+                ListItem li = new ListItem
+                {
+                    Text = i.ToString(),
+                    Value = i.ToString()
+                };
+                ddlProductQuantity.Items.Add(li);
+            }
+            // End of Adapted Code
         }
 
         protected void BtnPurchaseProduct_Click(object sender, EventArgs e)

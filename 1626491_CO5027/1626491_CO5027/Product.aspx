@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="_1626491_CO5027.WebForm6" %>
+﻿<%@ Page Title="Product Details | HyperPadz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="_1626491_CO5027.WebForm6" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
@@ -60,11 +60,8 @@
             <br />
         </ItemTemplate>
     </asp:FormView>
-
-        <asp:DropDownList ID="ddlProductQuantity" runat="server">
-            <asp:ListItem>1</asp:ListItem>
-            <asp:ListItem>2</asp:ListItem>
-            <asp:ListItem>3</asp:ListItem>
+        <asp:Label ID="QuantityLabel" runat="server" Text="Quantity:"></asp:Label>
+        <asp:DropDownList ID="ddlProductQuantity" runat="server" CssClass="txtBox4">
         </asp:DropDownList>
 
         <p>Postage and Packaging charges of $4.99 will be applied to your order</p>

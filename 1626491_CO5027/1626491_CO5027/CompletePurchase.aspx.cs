@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +14,13 @@ namespace _1626491_CO5027
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /* Incomplete test
+             * var config = ConfigManager.Instance.GetProperties();
+            var accessToken = new OAuthTokenCredential(config).GetAccessToken();
+            var apiContext = new APIContext(accessToken);
 
+            var paymentId = Session["paymentId"].ToString();
+            test1.Text = paymentId; */
         }
 
         protected void BtnConfirmPurchase_Click(object sender, EventArgs e)
@@ -35,9 +43,16 @@ namespace _1626491_CO5027
                 //Execute the payment
                 var executedPayment = payment.Execute(apiContext, paymentExecution);
 
+                /* Reduce Stock code test
+                int test1 = 1;
+                SqlConnection con = new
+                    SqlConnection(ConfigurationManager.ConnectionStrings["IdentityConnectionString"].ToString());
+                        string updateSQL = "UPDATE tblProducts SET Stock=Stock-" + test1 + "Where ID=" + Request.QueryString["ID"];
+                        */
                 //Inform the user
                 litInformation.Text = "<p>Your order has been completed successfully!</p>";
                 btnConfirmPurchase.Visible = false;
+           
             }
             
         }

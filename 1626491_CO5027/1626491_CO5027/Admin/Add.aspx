@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <section class="alt2">
+        <h2>Admin Area - Add Products</h2>
         <asp:FormView ID="AddDatabaseFormView" runat="server" DataKeyNames="ID" DataSourceID="DatabaseAddFormView" DefaultMode="Insert">
             <EditItemTemplate>
                 ID:

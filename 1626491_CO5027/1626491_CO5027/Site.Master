@@ -33,7 +33,7 @@
                     <li><a href="~/Default.aspx" runat="server">Home</a></li>
                     <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li> 
                     <li><a href="~/Admin/default.aspx" runat="server">
-                        <asp:LoginName ID="LoginName1" runat="server" FormatString="Hi, {0}! "/></a></li>
+                        <asp:LoginName ID="LoginName1" runat="server" FormatString="Hi, {0}! "/><p class="hidden">Login Name Goes Here</p></a></li>
                     <li><asp:LoginStatus ID="LoginStatus1" runat="server"
                             LoginText="Login"
                             LogoutText="Logout"

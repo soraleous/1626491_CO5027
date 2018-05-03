@@ -19,7 +19,12 @@
             <asp:BoundField DataField="Stock" HeaderText="Stock" SortExpression="Stock">
             </asp:BoundField>
             <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
-            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowSelectButton="True" />
+            <asp:CommandField ButtonType="Button" ShowSelectButton="True"  >
+            <ItemStyle CssClass="button2" />
+            </asp:CommandField>
+            <asp:CommandField ButtonType="Button" ShowDeleteButton="True">
+            <ItemStyle CssClass="button2" />
+            </asp:CommandField>
             <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="Upload.aspx?id={0}" Text="Set Image">
             <ItemStyle CssClass="button2" />
             </asp:HyperLinkField>
