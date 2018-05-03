@@ -13,6 +13,15 @@ namespace _1626491_CO5027 {
     public partial class WebForm6 {
         
         /// <summary>
+        /// CurrentImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage;
+        
+        /// <summary>
         /// ProductFormView control.
         /// </summary>
         /// <remarks>

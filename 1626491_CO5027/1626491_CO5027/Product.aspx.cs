@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PayPal;
 using PayPal.Api;
 
 namespace _1626491_CO5027
@@ -12,7 +13,10 @@ namespace _1626491_CO5027
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string productId = Request.QueryString["ID"];
+            string filename = productId + ".jpg";
 
+            CurrentImage.ImageUrl = "~/ProductImages/" + filename;
         }
 
         protected void BtnPurchaseProduct_Click(object sender, EventArgs e)
@@ -86,23 +90,30 @@ namespace _1626491_CO5027
                 return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/CompletePurchase.aspx"
             };
 
-            var payment = Payment.Create(apiContext, new Payment
+            try
             {
-                intent = "sale",
-                payer = payer,
-                transactions = new List<Transaction> { transaction },
-                redirect_urls = redirectUrls
-            });
-
-            Session["paymentId"] = payment.id;
-
-            foreach (var link in payment.links)
-            {
-                if (link.rel.ToLower().Trim().Equals("approval_url"))
+                var payment = Payment.Create(apiContext, new Payment
                 {
-                    //Found the appropriate link, send the user there
-                    Response.Redirect(link.href);
+                    intent = "sale",
+                    payer = payer,
+                    transactions = new List<Transaction> { transaction },
+                    redirect_urls = redirectUrls
+                });
+
+                Session["paymentId"] = payment.id;
+
+                foreach (var link in payment.links)
+                {
+                    if (link.rel.ToLower().Trim().Equals("approval_url"))
+                    {
+                        //Found the appropriate link, send the user there
+                        Response.Redirect(link.href);
+                    }
                 }
+            }
+            catch (PaymentsException ex)
+            {
+                Response.Write(ex.Response);
             }
         }
     }

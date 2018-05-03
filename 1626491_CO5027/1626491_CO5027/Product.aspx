@@ -3,39 +3,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <section class="alt2">
-    <asp:FormView ID="ProductFormView" runat="server" DataSourceID="ViewProductFormView">
+        <asp:Image ID="CurrentImage" runat="server" Height="250px" Width="250px" CssClass="img2"/>
+        <asp:FormView ID="ProductFormView" runat="server" DataSourceID="ViewProductFormView">
         <EditItemTemplate>
             <asp:Label ID="NameLabel" runat="server" Text="Name:" AssociatedControlID="NameTextBox"></asp:Label>
             <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
-            <br />
             <asp:Label ID="ModelCodeLabel" runat="server" Text="SKU:" AssociatedControlID="ModelCodeTextBox"></asp:Label>
             <asp:TextBox ID="ModelCodeTextBox" runat="server" Text='<%# Bind("ModelCode") %>' />
-            <br />
             <asp:Label ID="SizeLabel" runat="server" Text="Size:" AssociatedControlID="SizeTextBox"></asp:Label>
             <asp:TextBox ID="SizeTextBox" runat="server" Text='<%# Bind("Size") %>' />
-            <br />
             <asp:Label ID="PriceLabel" runat="server" Text="Price:" AssociatedControlID="PriceTextBox"></asp:Label>
             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
-            <br />
             <asp:Label ID="StockLabel" runat="server" Text="Stock:" AssociatedControlID="StockTextBox"></asp:Label>
             <asp:TextBox ID="StockTextBox" runat="server" Text='<%# Bind("Stock") %>' />
-            <br />
             <asp:Label ID="DescriptionLabel" runat="server" Text="Description:" AssociatedControlID="DescriptionTextBox"></asp:Label>
             <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
-            <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
         <InsertItemTemplate>
             <asp:Label ID="NameLabel" runat="server" Text="Name:" AssociatedControlID="NameTextBox"></asp:Label>
             <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
-            <br />
             <asp:Label ID="ModelCodeLabel" runat="server" Text="SKU:" AssociatedControlID="ModelCodeTextBox"></asp:Label>
             <asp:TextBox ID="ModelCodeTextBox" runat="server" Text='<%# Bind("ModelCode") %>' />
-            <br />
             <asp:Label ID="SizeLabel" runat="server" Text="Size:" AssociatedControlID="SizeTextBox"></asp:Label>
             <asp:TextBox ID="SizeTextBox" runat="server" Text='<%# Bind("Size") %>' />
-            <br />
             <asp:Label ID="PriceLabel" runat="server" Text="Price:" AssociatedControlID="PriceTextBox"></asp:Label>
             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
             <br />
@@ -49,7 +41,6 @@
             <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
-            Name:
             <asp:Label ID="NameLabel" runat="server" Text='<%# Bind("Name") %>' />
             <br />
             SKU:
@@ -58,7 +49,7 @@
             Size:
             <asp:Label ID="SizeLabel" runat="server" Text='<%# Bind("Size") %>' />
             <br />
-            Price:
+            Price: $
             <asp:Label ID="PriceLabel" runat="server" Text= '<%# Bind("Price") %>' />
             <br />
             Stock:
@@ -84,6 +75,6 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-        <asp:Button ID="btnPurchaseProduct" runat="server" OnClick="BtnPurchaseProduct_Click" Text="Buy Now" />
+        <asp:Button ID="btnPurchaseProduct" runat="server" OnClick="BtnPurchaseProduct_Click" Text="Buy Now" CssClass="button1" />
     </section>
 </asp:Content>

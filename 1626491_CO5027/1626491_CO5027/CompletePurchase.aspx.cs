@@ -41,5 +41,10 @@ namespace _1626491_CO5027
             }
             
         }
+
+        protected void BtnCancelPurchase_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/Cancel.aspx");
+        }
     }
 }
