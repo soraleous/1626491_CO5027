@@ -75,8 +75,10 @@ namespace _1626491_CO5027
                 }
             };
 
-            var payer = new Payer();
-            payer.payment_method = "paypal";
+            var payer = new Payer
+            {
+                payment_method = "paypal"
+            };
 
             var redirectUrls = new RedirectUrls
             {

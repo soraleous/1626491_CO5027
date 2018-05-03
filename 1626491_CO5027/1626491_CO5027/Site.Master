@@ -33,14 +33,15 @@
                         <li><a href="~/Default.aspx" runat="server">Home</a></li>
                         <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li> 
                         <li>
-                            <asp:LoginName ID="LoginName1" runat="server" FormatString="Welcome, {0}!"/>
+                            <a href="~/Admin/default.aspx" runat="server">
+                                <asp:LoginName ID="LoginName1" runat="server" FormatString="Hi, {0}!"/></a>
                             <asp:LoginStatus ID="LoginStatus1" runat="server"
-                            LoginText="Login"
-                            LogoutText="Sign Out"
-                            LogoutPageUrl="~/Default.aspx"
-                            LogoutAction="Redirect"
-                            OnLoggingOut="LoginStatus1_LoggingOut"
-                            /></li>
+                                LoginText="Login"
+                                LogoutText="Sign Out"
+                                LogoutPageUrl="~/Default.aspx"
+                                LogoutAction="Redirect"
+                                OnLoggingOut="LoginStatus1_LoggingOut"/>
+                        </li>
                     </ul>
                 </nav>
                 <!-- Navigation Menu Ends Here -->
