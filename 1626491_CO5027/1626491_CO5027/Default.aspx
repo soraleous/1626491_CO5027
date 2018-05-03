@@ -10,7 +10,7 @@
         <ItemTemplate>
             <div class="RepeaterItem">
                 <a href="<%# Eval("ID", "Product.aspx?ID={0}") %>">
-                    <img src="ProductImages/<%#Eval("ID") %>.jpg" width="200" height="150" class="img1"/>
+                    <img src="ProductImages/<%#Eval("ID") %>.jpg" width="200" height="150" class="img1" alt="<%#Eval ("Name") %> Image" />
                     <h4><%#Eval ("Name") %> <%#Eval ("Size") %>  </h4>         
                     <h4>$<%#Eval ("Price") %></h4>
 

@@ -135,7 +135,8 @@ footer.wrapper {
 .RepeaterItem {
     display:inline-block;
     position:relative;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     border-style: groove;
     border-width: 2px;
     border-color: whitesmoke;
