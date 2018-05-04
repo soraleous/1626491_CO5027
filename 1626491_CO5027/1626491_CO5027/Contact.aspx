@@ -11,7 +11,7 @@
         <asp:RequiredFieldValidator ID="reqValName" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter a name">*</asp:RequiredFieldValidator>
     <p>
         <asp:Label ID="lblEmail" runat="server" Text="Email:" Visible="False"></asp:Label>
-        <asp:TextBox ID="txtEmail" runat="server" CssClass="txtBox1" placeholder="Email"></asp:TextBox>
+        <asp:TextBox ID="txtEmail" runat="server" CssClass="txtBox1" placeholder="Email" MaxLength="100"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="Please enter an email address" ControlToValidate="txtEmail">*</asp:RequiredFieldValidator>
     </p>
     <p>
@@ -25,7 +25,7 @@
     </p>
     <p>
         <asp:Label ID="lblMessage" runat="server" Text="Message:" Visible="False"></asp:Label>
-        <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine" CssClass="txtBox2" placeholder="Message"></asp:TextBox>
+        <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine" CssClass="txtBox2" placeholder="Message" MaxLength="1000"></asp:TextBox>
         <asp:RequiredFieldValidator ID="reqValBody" runat="server" ErrorMessage="Please enter a message" ControlToValidate="txtBody">*</asp:RequiredFieldValidator>
     </p>
     <p>

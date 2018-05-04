@@ -44,7 +44,8 @@ namespace _1626491_CO5027
                 //Execute the payment
                 var executedPayment = payment.Execute(apiContext, paymentExecution);
 
-                // Reduce Stock code
+                // Reduce Stock SQL code
+                // Code Adapted From JasonTsoum77, 2013
                 SqlConnection con = new
                     SqlConnection(ConfigurationManager.ConnectionStrings["IdentityConnectionString"].ToString());
                         string updateSQL = "UPDATE tblProducts SET Stock=Stock-" + stock + "Where ID=" + productId;
@@ -61,6 +62,7 @@ namespace _1626491_CO5027
                 {
                     con.Close();
                 }
+                // End of Adapted Code
                         
                 //Inform the user
                 litInformation.Text = "<p>Your order has been completed successfully!</p>";

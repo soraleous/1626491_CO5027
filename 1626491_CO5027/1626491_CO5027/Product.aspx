@@ -30,34 +30,25 @@
             <asp:TextBox ID="SizeTextBox" runat="server" Text='<%# Bind("Size") %>' />
             <asp:Label ID="PriceLabel" runat="server" Text="Price:" AssociatedControlID="PriceTextBox"></asp:Label>
             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
-            <br />
             <asp:Label ID="StockLabel" runat="server" Text="Stock:" AssociatedControlID="StockTextBox"></asp:Label>
             <asp:TextBox ID="StockTextBox" runat="server" Text='<%# Bind("Stock") %>' />
-            <br />
             <asp:Label ID="DescriptionLabel" runat="server" Text="Description:" AssociatedControlID="DescriptionTextBox"></asp:Label>
             <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
-            <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
             <asp:Label ID="NameLabel" runat="server" Text='<%# Bind("Name") %>' />
-            <br />
             SKU:
             <asp:Label ID="ModelCodeLabel" runat="server" Text='<%# Bind("ModelCode") %>' />
-            <br />
             Size:
             <asp:Label ID="SizeLabel" runat="server" Text='<%# Bind("Size") %>' />
-            <br />
             Price: $
             <asp:Label ID="PriceLabel" runat="server" Text= '<%# Bind("Price") %>' />
-            <br />
             Stock:
             <asp:Label ID="StockLabel" runat="server" Text='<%# Bind("Stock") %>' />
-            <br />
             Description:
             <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Bind("Description") %>' />
-            <br />
         </ItemTemplate>
     </asp:FormView>
         <asp:Label ID="QuantityLabel" runat="server" Text="Quantity:"></asp:Label>

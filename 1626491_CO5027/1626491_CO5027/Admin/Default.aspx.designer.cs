@@ -40,15 +40,6 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.SqlDataSource DatabaseFormViewSQL;
         
         /// <summary>
-        /// DatabaseFormView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView DatabaseFormView;
-        
-        /// <summary>
         /// BtnEdit control.
         /// </summary>
         /// <remarks>
@@ -65,5 +56,14 @@ namespace _1626491_CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnLogOut;
+        
+        /// <summary>
+        /// DatabaseFormView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FormView DatabaseFormView;
     }
 }

@@ -15,12 +15,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato%7COpen+Sans" rel="stylesheet"/>	
     <!-- Scripts -->
 	<!-- modernizr-custom.js obtained from Modernizr, n.d. -->
-	<script src="Scripts/modernizr-custom.js"></script>
+	<script src="<%=ResolveClientUrl("~/Scripts/modernizr-custom.js")%>"></script>
     <!-- respond.min.js obtained from Jehl, n.d. -->
-	<script src="Scripts/respond.min.js"></script>
+	<script src="<%=ResolveClientUrl("~/Scripts/respond.min.js")%>"></script>
     <!-- prefixfree.min.js obtained from Verou, n.d. -->
-	<script src="Scripts/prefixfree.min.js"></script>
-
+	<script src="<%=ResolveClientUrl("~/Scripts/prefixfree.min.js")%>"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -43,6 +42,9 @@
                     </li>
                 </ul>
             </nav>
+            <!-- Load Script for Nav Active class -->
+            <!-- Script Obtained from Zhou 2015 -->
+            <script src="<%=ResolveClientUrl("~/Scripts/menuactive.js")%>"></script>
             <!-- Navigation Menu Ends Here -->
         </header>
         <!-- Header Ends Here -->

@@ -1,8 +1,7 @@
 ﻿/* Main elements
 ---------------------------------------- */
 body {
-	/* Background image obtained from 
-	http://bozhuwallpaper.com/black-abstract-wallpapers-high-resolution/ */
+	/* Background image obtained from Riley, 2017 */
 	background:url('../Images/background/blk_abs_background.jpg') no-repeat center center fixed #1C1C1C;
 	background-size: cover;
 	font-family: Lato, 'Open Sans', sans-serif;
@@ -183,6 +182,27 @@ footer.wrapper {
 /* Product Page Elements
 -------------------------------------------*/
 
+/* Admin Database Page Gridview Elements
+-------------------------------------------*/
+.gridview1 {
+    border: solid 3px #525252;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.gvText1 {
+    text-align: center;
+    border: solid 3px #525252;
+    padding: 4px;
+}
+.gvText2 {
+    text-align:left;
+}
+.col1 {
+    display: none;
+}
 
 /* Section elements
 -------------------------------------------*/
@@ -319,8 +339,9 @@ nav ul li a {
 nav ul li a:hover {
 	opacity: 0.5;
 }
-nav ul li a:active {
+nav ul li a.active {
 	transform: translateY(4px);
+    color: #B82601;
 }
 .current {
 	color: #B82601;

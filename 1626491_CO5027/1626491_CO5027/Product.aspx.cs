@@ -25,7 +25,7 @@ namespace _1626491_CO5027
             var fcStock = ProductFormView.FindControl("StockLabel") as Label;
             string itemStock = fcStock.Text;
             int cStock = int.Parse(itemStock);
-            // Code Adapted From https://stackoverflow.com/a/10450785
+            // Code Adapted From East, 2012
             for (int i = 1; i <= cStock; i++)
             {
                 ListItem li = new ListItem
@@ -40,7 +40,7 @@ namespace _1626491_CO5027
 
         protected void BtnPurchaseProduct_Click(object sender, EventArgs e)
         {
-            // Code Adapted from https://stackoverflow.com/a/8185231
+            // Code Adapted from Piras, 2011
             var fcPrice = ProductFormView.FindControl("PriceLabel") as Label;
             var itemPrice = fcPrice.Text;
             var fcName = ProductFormView.FindControl("NameLabel") as Label;

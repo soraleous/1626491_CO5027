@@ -149,6 +149,7 @@
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\menuactive.js" />
     <Content Include="Scripts\modernizr-custom.js" />
     <Content Include="Scripts\prefixfree.min.js" />
     <Content Include="Scripts\respond.min.js" />
