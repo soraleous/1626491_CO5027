@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -14,17 +15,17 @@ namespace _1626491_CO5027
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /* Incomplete test
-             * var config = ConfigManager.Instance.GetProperties();
-            var accessToken = new OAuthTokenCredential(config).GetAccessToken();
-            var apiContext = new APIContext(accessToken);
-
-            var paymentId = Session["paymentId"].ToString();
-            test1.Text = paymentId; */
+            
         }
 
         protected void BtnConfirmPurchase_Click(object sender, EventArgs e)
         {
+            //Load values of items
+            string productId = Request.QueryString["ID"];
+            string quant = Request.QueryString["Quant"];
+            int stock = int.Parse(quant);
+
+            //Load paypal token
             var config = ConfigManager.Instance.GetProperties();
             var accessToken = new OAuthTokenCredential(config).GetAccessToken();
             var apiContext = new APIContext(accessToken);
@@ -43,12 +44,24 @@ namespace _1626491_CO5027
                 //Execute the payment
                 var executedPayment = payment.Execute(apiContext, paymentExecution);
 
-                /* Reduce Stock code test
-                int test1 = 1;
+                // Reduce Stock code
                 SqlConnection con = new
                     SqlConnection(ConfigurationManager.ConnectionStrings["IdentityConnectionString"].ToString());
-                        string updateSQL = "UPDATE tblProducts SET Stock=Stock-" + test1 + "Where ID=" + Request.QueryString["ID"];
-                        */
+                        string updateSQL = "UPDATE tblProducts SET Stock=Stock-" + stock + "Where ID=" + productId;
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(updateSQL, con);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                }
+                finally
+                {
+                    con.Close();
+                }
+                        
                 //Inform the user
                 litInformation.Text = "<p>Your order has been completed successfully!</p>";
                 btnConfirmPurchase.Visible = false;

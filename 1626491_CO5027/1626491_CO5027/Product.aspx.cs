@@ -51,6 +51,9 @@ namespace _1626491_CO5027
             string itemSize = fcSize.Text;
             // End of adapted code
 
+            //Obtain product ID to transfer to other page
+            string productId = Request.QueryString["ID"];
+
             decimal postagePackingCost = 4.99m;
             decimal productPrice = decimal.Parse(itemPrice);
             decimal quantityOfProduct = int.Parse(ddlProductQuantity.SelectedValue);
@@ -106,7 +109,7 @@ namespace _1626491_CO5027
             var redirectUrls = new RedirectUrls
             {
                 cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/Cancel.aspx",
-                return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/CompletePurchase.aspx"
+                return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/CompletePurchase.aspx?Quant=" + quantityOfProduct + "&ID=" + productId
             };
 
             try
