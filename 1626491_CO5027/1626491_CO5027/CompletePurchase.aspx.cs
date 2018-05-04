@@ -67,6 +67,7 @@ namespace _1626491_CO5027
                 //Inform the user
                 litInformation.Text = "<p>Your order has been completed successfully!</p>";
                 btnConfirmPurchase.Visible = false;
+                btnCancelPurchase.Visible = false;
            
             }
             
