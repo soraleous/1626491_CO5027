@@ -120,6 +120,7 @@
     <Content Include="ProductImages\1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ProductImages\14.jpg" />
     <Content Include="ProductImages\2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -148,7 +148,7 @@
             </div>
             <div>
             <asp:Label ID="DescriptionLabel" runat="server" Text="Description:" AssociatedControlID="DescriptionTextBox" Visible="False"></asp:Label>
-            <asp:TextBox ID="DescriptionTextBox" runat="server" TextMode="MultiLine" Text='<%# Bind("Description") %>' CssClass="txtBox2" placeholder="Description" MaxLength="1000"/>
+            <asp:TextBox ID="DescriptionTextBox" runat="server" TextMode="MultiLine" Text='<%# Bind("Description") %>' CssClass="txtBox2" placeholder="Description (Can be empty)" MaxLength="1000"/>
             </div>
             <asp:Button ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" CssClass="button2"/>
             <asp:Button ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Visible="False" Text="Cancel" CssClass="button2"/>

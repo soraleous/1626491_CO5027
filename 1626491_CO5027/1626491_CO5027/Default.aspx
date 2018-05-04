@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
     <section class="alt2">   
-    <h2>Welcome to HyperPads!</h2>
+    <h2>Welcome to HyperPadz Store!</h2>
         <h3 class="hidden">Mousepads Listed Below</h3>
     <asp:Repeater ID="rptrProducts" runat="server" DataSourceID="HomeRepeaterSQL">
     <HeaderTemplate><div id="RepeaterHeader"></HeaderTemplate>

@@ -12,6 +12,7 @@
     <p>
         <asp:Label ID="lblEmail" runat="server" Text="Email:" Visible="False"></asp:Label>
         <asp:TextBox ID="txtEmail" runat="server" CssClass="txtBox1" placeholder="Email" MaxLength="100"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="revLoginEmailVal" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail" ErrorMessage="Invalid Email Format">*</asp:RegularExpressionValidator>
         <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="Please enter an email address" ControlToValidate="txtEmail">*</asp:RequiredFieldValidator>
     </p>
     <p>
@@ -32,9 +33,11 @@
         <asp:Button ID="btnSendEmail" runat="server" OnClick="BtnContact_Click" Text="Send" CssClass="button1" />
         <asp:Literal ID="litResult" runat="server"></asp:Literal>
     </p>
-    <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
-    <br />
-    <div id="map"></div>
+    <asp:ValidationSummary ID="ValSumContact" runat="server" />
+    <div id="map">
+        <img class="staticmap" src="https://maps.googleapis.com/maps/api/staticmap?center=4.885502,114.931423&zoom=18&scale=1&size=600x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C4.885502,114.931423&key=AIzaSyDQ8rJ51e8SfgFDOAf-kc3MdCJ-arDiB2I" 
+            alt="HyperPadz Google Maps Static Image" />
+    </div>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl_dTpeM9vWe7eXl_fFn6an6unXFmIKvY&callback=initMap">
     </script>

@@ -58,6 +58,15 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
+        /// revLoginEmailVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revLoginEmailVal;
+        
+        /// <summary>
         /// reqValEmail control.
         /// </summary>
         /// <remarks>
@@ -139,12 +148,12 @@ namespace _1626491_CO5027 {
         protected global::System.Web.UI.WebControls.Literal litResult;
         
         /// <summary>
-        /// ValidationSummary1 control.
+        /// ValSumContact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValSumContact;
     }
 }
