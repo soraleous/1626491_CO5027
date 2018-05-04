@@ -2,8 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContentPlaceholder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
-    <section class="alt2">
-        <asp:Image ID="CurrentImage" runat="server" Height="250px" Width="250px" CssClass="img2"/>
+    <div class="row">
+        <div class="column left">
+            <asp:Image ID="CurrentImage" runat="server" Height="250px" Width="250px" CssClass="img2"/>
+        </div>
+        <div class="column right">
         <asp:FormView ID="ProductFormView" runat="server" DataSourceID="ViewProductFormView">
         <EditItemTemplate>
             <asp:Label ID="NameLabel" runat="server" Text="Name:" AssociatedControlID="NameTextBox"></asp:Label>
@@ -38,24 +41,21 @@
             <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
-            <asp:Label ID="NameLabel" runat="server" Text='<%# Bind("Name") %>' />
-            SKU:
-            <asp:Label ID="ModelCodeLabel" runat="server" Text='<%# Bind("ModelCode") %>' />
-            Size:
-            <asp:Label ID="SizeLabel" runat="server" Text='<%# Bind("Size") %>' />
-            Price: $
-            <asp:Label ID="PriceLabel" runat="server" Text= '<%# Bind("Price") %>' />
-            Stock:
-            <asp:Label ID="StockLabel" runat="server" Text='<%# Bind("Stock") %>' />
-            Description:
-            <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Bind("Description") %>' />
+            <h3><asp:Label ID="NameLabel" runat="server" Text='<%# Bind("Name") %>' /></h3>           
+            <h4>SKU: <asp:Label ID="ModelCodeLabel" runat="server" Text='<%# Bind("ModelCode") %>' /></h4>         
+            <h4>Size: <asp:Label ID="SizeLabel" runat="server" Text='<%# Bind("Size") %>' /></h4>        
+            <h4>Price: $<asp:Label ID="PriceLabel" runat="server" Text= '<%# Bind("Price") %>' /></h4>
+            <h4>Stock: <asp:Label ID="StockLabel" runat="server" Text='<%# Bind("Stock") %>' /></h4>           
+            <h4>Description:</h4>
+            <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Bind("Description") %>'  Visible="false"/>    
         </ItemTemplate>
     </asp:FormView>
-        <asp:Label ID="QuantityLabel" runat="server" Text="Quantity:"></asp:Label>
+        <asp:Label ID="test1" runat="server" text=""></asp:Label>
+        <p>*Postage and Packaging charges of $4.99 will be applied to your order.</p>
+        <h4><asp:Label ID="QuantityLabel" runat="server" Text="Quantity:"></asp:Label>
         <asp:DropDownList ID="ddlProductQuantity" runat="server" CssClass="txtBox4">
         </asp:DropDownList>
-
-        <p>Postage and Packaging charges of $4.99 will be applied to your order</p>
+        </h4>
 
     <asp:SqlDataSource ID="ViewProductFormView" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT [Name], [ModelCode], [Size], [Price], [Stock], [Description] FROM [tblProducts] WHERE ([ID] = @ID)">
         <SelectParameters>
@@ -64,5 +64,6 @@
     </asp:SqlDataSource>
 
         <asp:Button ID="btnPurchaseProduct" runat="server" OnClick="BtnPurchaseProduct_Click" Text="Buy Now" CssClass="button1" />
-    </section>
+        </div>
+    </div>
 </asp:Content>

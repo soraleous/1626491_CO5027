@@ -13,11 +13,19 @@ namespace _1626491_CO5027
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Code to obtain images for image viewer
             string productId = Request.QueryString["ID"];
             string filename = productId + ".jpg";
-
             CurrentImage.ImageUrl = "~/ProductImages/" + filename;
             GenerateDdlItems();
+
+            //Code to convert user's line breaks from database to actual html line breaks
+            //Code Adapted From JK., 2011
+            var fcDescription = ProductFormView.FindControl("DescriptionLabel") as Label;
+            string itemDesc = fcDescription.Text;
+            string updateItem = itemDesc.Replace("\r\n", "<br />");
+            test1.Text = updateItem;
+            //End of Adapted Code
         }
 
         protected void GenerateDdlItems()
